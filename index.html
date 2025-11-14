@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Traditional East Javanese Game Recommender</title>
+</head>
+<body>
+    <header>
+        <h1>AREK DOLAN</h1>
+        <p>Discover traditional games from East Java. Filter by location and player count to find the perfect game!</p>
+    </header>
+    <main>
+        <button id="toggle-admin">Admin Panel</button>
+        <div id="admin-panel" class="admin-panel">
+            <h2>Add New Game</h2>
+            <form id="add-game-form">
+                <label for="new-name">Name:</label>
+                <input type="text" id="new-name" required>
+                <label for="new-description">Description:</label>
+                <textarea id="new-description" required></textarea>
+                <label for="new-min-players">Min Players:</label>
+                <input type="number" id="new-min-players" min="1" required>
+                <label for="new-max-players">Max Players:</label>
+                <input type="number" id="new-max-players" min="1" required>
+                <label for="new-location">Location:</label>
+                <select id="new-location" required>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                </select>
+                <label for="new-instructions">How to Play:</label>
+                <textarea id="new-instructions" required></textarea>
+                <label for="new-images">Image URLs (comma-separated):</label>
+                <input type="text" id="new-images" placeholder="https://example.com/img1.jpg, https://example.com/img2.jpg">
+                <button type="submit">Add Game</button>
+            </form>
+        </div>
+        <form id="filter-form">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="">All</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+            </select>
+            <label for="min-players">Min Players:</label>
+            <input type="number" id="min-players" min="1" placeholder="e.g., 2">
+            <label for="max-players">Max Players:</label>
+            <input type="number" id="max-players" min="1" placeholder="e.g., 10">
+            <button type="submit">Filter Games</button>
+        </form>
+        <div id="results"></div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div id="modal-images" class="image-gallery"></div>
+                <p id="modal-description"></p>
+                <p id="modal-players"></p>
+                <p id="modal-location"></p>
+                <h3>How to Play</h3>
+                <p id="modal-instructions"></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
