@@ -13,7 +13,7 @@ const games = [
         description: "A game where players kick a ball made from woven rattan into the opponent's goal.",
         minPlayers: 4,
         maxPlayers: 10,
-        location: "outdoor",
+        location: "outdoor",   
         instructions: "Divide into two teams. Kick the ball into the opponent's goal without using hands. First team to score wins.",
         images: ["images/download (5).jpg", "images/download (5).jpg"]
     },
@@ -94,22 +94,21 @@ function renderGames(gamesToRender) {
 
 function filterGames() {
     const location = document.getElementById('location').value;
-    const minPlayers = parseInt(document.getElementById('min-players').value) || 0;
-    const maxPlayers = parseInt(document.getElementById('max-players').value) || Infinity;
+    const playersInput = document.getElementById('min-players').value;
+    const players = playersInput ? parseInt(playersInput) : null;
 
     const filteredGames = games.filter(game => {
         const locationMatch = !location || game.location === location;
-        const playersMatch = game.minPlayers <= maxPlayers && game.maxPlayers >= minPlayers;
+        const playersMatch = players === null || (game.minPlayers <= players && game.maxPlayers >= players);
         return locationMatch && playersMatch;
     });
 
     renderGames(filteredGames);
 }
 
-document.getElementById('filter-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    filterGames();
-});
+// Add real-time filtering on input changes
+document.getElementById('location').addEventListener('change', filterGames);
+document.getElementById('min-players').addEventListener('input', filterGames);
 
 // Modal functions
 function openModal(gameName) {

@@ -20,10 +20,11 @@ body.modal-open {
 }
 
 header {
-    background-color: var(--pakistan-green);
+    background: linear-gradient(135deg, var(--pakistan-green), var(--dark-moss-green));
     color: var(--cornsilk);
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -51,6 +52,7 @@ form {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+    justify-content: space-between;
 }
 
 form label {
@@ -63,6 +65,11 @@ form select, form input {
     border: none;
     border-radius: 4px;
     font-size: 1em;
+}
+
+form select:focus {
+    outline: 2px solid var(--earth-yellow);
+    box-shadow: 0 0 5px rgba(221, 161, 94, 0.5);
 }
 
 form button {
@@ -202,13 +209,22 @@ form button:hover {
 .close {
     color: var(--tigers-eye);
     float: right;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     cursor: pointer;
+    background-color: var(--cornsilk);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--dark-moss-green);
 }
 
 .close:hover {
     color: var(--pakistan-green);
+    background-color: var(--earth-yellow);
 }
 
 .admin-panel {
