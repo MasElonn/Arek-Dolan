@@ -130,12 +130,22 @@ function openModal(gameName) {
                 gallery.appendChild(img);
             });
         }
-        document.getElementById('modal').style.display = 'block';
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+        document.body.classList.add('modal-open');
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
     }
 }
 
 function closeModal() {
-    document.getElementById('modal').style.display = 'none';
+    const modal = document.getElementById('modal');
+    modal.classList.remove('show');
+    document.body.classList.remove('modal-open');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 300);
 }
 
 // Close modal when clicking outside or on close button

@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 header {
     background-color: var(--pakistan-green);
     color: var(--cornsilk);
@@ -155,6 +159,12 @@ form button:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
 }
 
 .modal-content {
@@ -166,6 +176,12 @@ form button:hover {
     max-width: 800px;
     border-radius: 8px;
     color: var(--pakistan-green);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
 }
 
 .image-gallery {
