@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Congklak",
+        "description": "A traditional board game played with small stones or shells in holes on a wooden board.",
+        "minPlayers": 2,
+        "maxPlayers": 2,
+        "location": "indoor",
+        "instructions": "Players take turns moving stones around the board, capturing opponent's stones by landing on occupied holes. The player with the most stones wins.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Gobak Sodor",
+        "description": "A game where players kick a ball made from woven rattan into the opponent's goal.",
+        "minPlayers": 4,
+        "maxPlayers": 10,
+        "location": "outdoor",   
+        "instructions": "Divide into two teams. Kick the ball into the opponent's goal without using hands. First team to score wins.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Egrang",
+        "description": "A game similar to hopscotch, played on a drawn grid on the ground.",
+        "minPlayers": 1,
+        "maxPlayers": 4,
+        "location": "outdoor",
+        "instructions": "Draw a grid on the ground. Hop through the squares on one foot, picking up stones without stepping on lines.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Dakon",
+        "description": "A variant of Congklak, played with larger boards and more holes.",
+        "minPlayers": 2,
+        "maxPlayers": 2,
+        "location": "indoor",
+        "instructions": "Similar to Congklak but with more holes. Move seeds around the board, capturing when landing on opponent's side.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Kelereng",
+        "description": "A marble game where players shoot marbles into holes or at each other's marbles.",
+        "minPlayers": 2,
+        "maxPlayers": 6,
+        "location": "outdoor",
+        "instructions": "Draw a circle or holes in the ground. Take turns shooting marbles to knock others out or into holes.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Bentengan",
+        "description": "A team-based game where players defend a fort made of stacked stones or wood.",
+        "minPlayers": 6,
+        "maxPlayers": 20,
+        "location": "outdoor",
+        "instructions": "Build forts with stones. Teams try to knock down the opponent's fort while defending their own.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Ular Naga",
+        "description": "A dragon dance game where players form a long line and mimic a dragon's movements.",
+        "minPlayers": 10,
+        "maxPlayers": 50,
+        "location": "outdoor",
+        "instructions": "Form a long line holding hands. The leader mimics dragon movements, others follow in sync.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg", "images/download (5).jpg"]
+    },
+    {
+        "name": "Layangan",
+        "description": "Kite flying, a popular outdoor activity with traditional kite designs.",
+        "minPlayers": 1,
+        "maxPlayers": 5,
+        "location": "outdoor",
+        "instructions": "Build or buy a kite. Fly it in open areas, competing for height or tricks.",
+        "images": ["images/download (5).jpg", "images/download (5).jpg"]
+    }
+]
